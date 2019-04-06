@@ -1,6 +1,6 @@
 alias ls="ls -G"
 alias ll="ls -la"
 
-alias synco="git fetch orign master && git merge origin/master"
+alias synco="git fetch origin master && git merge origin/master"
 alias syncu="git fetch upstream master && git merge upstream/master"
 alias git merge="git merge --no-ff"
