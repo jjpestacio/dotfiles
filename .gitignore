@@ -1,4 +1,5 @@
 .*history
+.*swp
 .gitconfig
 .paths
 .tcc_aliases
