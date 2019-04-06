@@ -1,6 +1,6 @@
 call plug#begin()
 Plug 'itchyny/lightline.vim'
-Plug 'crusoexia/vim-monokai'
+Plug 'sickill/vim-monokai'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug '/usr/local/opt/fzf'
