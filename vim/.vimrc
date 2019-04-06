@@ -1,9 +1,7 @@
 call plug#begin()
 Plug 'itchyny/lightline.vim'
-Plug 'sickill/vim-monokai'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
-Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 call plug#end()
 
