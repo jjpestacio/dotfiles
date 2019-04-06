@@ -7,17 +7,19 @@ Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 call plug#end()
 
-set ruler
-set number
-set relativenumber
 syntax on
-set shiftwidth=4
+colorscheme monokai
+
 set autoindent
 set smartindent
 set expandtab
+set number
+set relativenumber
+set ruler
+set shiftwidth=4
 set laststatus=2
-colorscheme monokai
 
-au BufRead,BufNewFile,BufReadPost .custom_* set filetype=rc
+autocmd BufRead,BufNewFile,BufReadPost .custom_* set filetype=rc
+autocmd BufRead,BufNewFile,BufReadPost .paths set filetype=rc
 
 set rtp+=/usr/local/opt/fzf

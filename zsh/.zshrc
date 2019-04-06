@@ -1,32 +1,15 @@
-# If you come from bash you might have to change your $PATH.
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/bin
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:$HOME/Library/Python/3.7/bin
-export PATH=$PATH:$HOME/Library/Python/2.7/bin
+source ~/.paths
 
-export GOPATH=$GOPATH:~/dev/go:~/go
-
-# Path to your oh-my-zsh installation.
-export ZSH="/Users/johnathan.estacio/.oh-my-zsh"
-
-# Set name of the theme to load. Optionally, if you set this to "random"
-# it'll load a random theme each time that oh-my-zsh is loaded.
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="cobalt2"
-
-# Set list of themes to load
-# Setting this variable when ZSH_THEME=random
-# cause zsh load theme from this variable instead of
 # looking in ~/.oh-my-zsh/themes/
 # An empty array have no effect
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
+CASE_SENSITIVE="true"
 
 # Uncomment the following line to use hyphen-insensitive completion. Case
 # sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
+HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
@@ -41,7 +24,7 @@ ZSH_THEME="cobalt2"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -69,6 +52,7 @@ ZSH_THEME="cobalt2"
 plugins=(
   git
   zsh-autosuggestions
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -102,14 +86,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-bindkey -v
-
-function tccenv {
-	eval `envmgr -e $*`
-}
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPS="--extended"
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse'
-
-eval "$(pyenv init -)"
