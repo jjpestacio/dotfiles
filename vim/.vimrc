@@ -19,7 +19,7 @@ set ruler
 set shiftwidth=4
 set laststatus=2
 
-autocmd BufRead,BufNewFile,BufReadPost .custom_* set filetype=rc
-autocmd BufRead,BufNewFile,BufReadPost .paths set filetype=rc
+autocmd BufRead,BufNewFile,BufReadPost .custom_* set filetype=sh
+autocmd BufRead,BufNewFile,BufReadPost .paths set filetype=sh
 
 set rtp+=/usr/local/opt/fzf
