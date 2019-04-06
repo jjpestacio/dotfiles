@@ -1,6 +1,6 @@
 source ~/.paths
 source ~/.custom_aliases
-[ -f ~/.tcc_aliases] && source ~/.tcc_aliases
+[ -f ~/.tcc_aliases ] && source ~/.tcc_aliases
 
 # looking in ~/.oh-my-zsh/themes/
 # An empty array have no effect
