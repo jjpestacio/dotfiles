@@ -1,9 +1,0 @@
-alias ls="ls -G"
-alias ll="ls -la"
-
-alias "git merge"="git merge --no-ff"
-alias pusho="git add . && git commit -m "update" && git push"
-alias synco="git fetch origin master && git merge origin/master"
-alias syncu="git fetch upstream master && git merge upstream/master"
-
-alias pip="pip3"
