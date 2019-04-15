@@ -1,5 +1,6 @@
 .*history
 .*swp
 .gitconfig
+.netrwhist
 .paths
 .tcc_aliases
