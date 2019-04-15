@@ -4,6 +4,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'w0rp/ale'
 call plug#end()
 
 syntax on
