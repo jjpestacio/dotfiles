@@ -10,10 +10,10 @@
     ~/.gitignore: gitignore
     ~/.oh-my-zsh: oh-my-zsh
     ~/.oh-my-zsh/custom/plugins: oh-my-zsh-custom-plugins
-    ~/.oh-my-zsh/themes/: oh-my-zsh-themes/*
     ~/.vim: vim
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - [curl -o ./oh-my-zsh/themes/cobalt2.zsh-theme https://raw.githubusercontent.com/wesbos/Cobalt2-iterm/master/cobalt2.zsh-theme, Installing cobalt2]
