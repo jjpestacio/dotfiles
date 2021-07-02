@@ -1,4 +1,4 @@
-[ -f ~/.paths] && source ~/.paths
+[ -f ~/.paths ] && source ~/.paths
 [ -f ~/.aliases ] && source ~/.aliases
 [ -f ~/.tcc_aliases ] && source ~/.tcc_aliases
 
@@ -57,12 +57,13 @@ HYPHEN_INSENSITIVE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  fzf
   git
   zsh-autosuggestions
   zsh-syntax-highlighting
 )
 
-source $ZSH/oh-my-zsh.sh
+source ~/.oh-my-zsh/oh-my-zsh.sh
 
 # User configuration
 
@@ -93,6 +94,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#source ~/.fzf.zsh
 export FZF_DEFAULT_OPS="--extended"
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse'
+
+source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
