@@ -1,7 +1,0 @@
-*.pyc
-*.swo
-*.swp
-/node_modules/
-/venv/
-.venv
-__pycache__

@@ -1,0 +1,9 @@
+*.egg-info
+*.pyc
+*.swo
+*.swp
+*history
+*venv
+.netrwhist
+/node_modules/
+__pycache__

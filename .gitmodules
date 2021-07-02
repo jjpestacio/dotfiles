@@ -1,3 +1,4 @@
-[submodule "vim/.vim/plugged/lightline.vim"]
-	path = vim/.vim/plugged/lightline.vim
-	url = https://github.com/itchyny/lightline.vim.git
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot
+	ignore = dirty

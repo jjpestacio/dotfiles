@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/Users/johnathan.estacio/dev/tcc_cloudutils/tcc_cloudutils/aws'
-let g:netrw_dirhist_2='/Users/johnathan.estacio/dev/aws_discovery/aws_discovery'
-let g:netrw_dirhist_3='/Users/johnathan.estacio/dev/aws_discovery/aws_discovery/blueprints'
-let g:netrw_dirhist_4='/Users/johnathan.estacio/dev/aws_discovery/aws_discovery'
-let g:netrw_dirhist_5='/Users/johnathan.estacio/dev/aws_discovery'
-let g:netrw_dirhist_6='/Users/johnathan.estacio/dev/aws_discovery/aws_discovery'
-let g:netrw_dirhist_7='/Users/johnathan.estacio/dev/iam-configuration/accounts/global/roles/daas-role'

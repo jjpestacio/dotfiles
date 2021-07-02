@@ -1,6 +1,1 @@
-.*history
-.*swp
-.gitconfig
-.netrwhist
-.paths
-.tcc_aliases
+com.googlecode.iterm2.plist
