@@ -2,15 +2,15 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
-[submodule "vim/plugged/ale"]
-	path = vim/plugged/ale
-	url = https://github.com/dense-analysis/ale.git
 [submodule "vim/plugged/vim-monokai-tasty"]
 	path = vim/plugged/vim-monokai-tasty
 	url = https://github.com/patstockwell/vim-monokai-tasty.git
 [submodule "vim/plugged/lightline.vim"]
 	path = vim/plugged/lightline.vim
 	url = https://github.com/itchyny/lightline.vim.git
+[submodule "vim/plugged/jedi-vim"]
+	path = vim/plugged/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = https://github.com/ohmyzsh/ohmyzsh.git
@@ -21,3 +21,6 @@
 [submodule "oh-my-zsh-custom-plugins/zsh-syntax-highlighting"]
 	path = oh-my-zsh-custom-plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "vim/plugged/ale"]
+	path = vim/plugged/ale
+	url = https://github.com/dense-analysis/ale.git
