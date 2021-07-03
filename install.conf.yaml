@@ -10,6 +10,7 @@
     ~/.gitignore: gitignore
     ~/.oh-my-zsh: oh-my-zsh
     ~/.oh-my-zsh/custom/plugins: oh-my-zsh-custom-plugins
+    ~/.paths: paths
     ~/.vim: vim
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
