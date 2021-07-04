@@ -32,11 +32,8 @@ set title
 
 " Remaps
 let mapleader = ","
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
 
+" NeoVim
 let g:python_host_prog  = '/usr/bin/python'
 let g:python3_host_prog = '/usr/local/bin/python3'
 
@@ -48,10 +45,15 @@ let g:material_italic_functions = 1
 let g:material_variable_color = '#9ca3cb'
 colorscheme material
 
+" NERDTree
+let g:NERDTreeShowHidden = 1
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+
 " CoC
 let g:coc_global_extensions = ['coc-css', 'coc-eslint', 'coc-fzf-preview', 'coc-go', 'coc-highlight', 'coc-html', 'coc-html-css-support', 'coc-json', 'coc-markdownlint', 'coc-pyright', 'coc-pydocstring', 'coc-sh', 'coc-sql', 'coc-toml', 'coc-yaml', 'coc-xml']
-
-let g:NERDTreeShowHidden = 1
 
 " Automatic commands
 autocmd BufWritePre *.py :silent call CocAction('runCommand', 'python.sortImports')
