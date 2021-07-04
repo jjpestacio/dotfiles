@@ -2,7 +2,7 @@ call plug#begin()
 Plug 'patstockwell/vim-monokai-tasty'
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'w0rp/ale'
+"Plug 'w0rp/ale'
 Plug 'preservim/nerdtree'
 Plug 'davidhalter/jedi-vim'
 call plug#end()
@@ -12,6 +12,7 @@ colorscheme vim-monokai-tasty
 set termguicolors
 
 set autoindent
+set backspace=indent,eol,start
 set dir=~/.cache/vim
 set expandtab
 set history=1000
@@ -24,7 +25,8 @@ set mouse=a
 set number
 set relativenumber
 set ruler
-set shiftround
+" TODO: probably best in python ftplugin
+" set shiftround " round indentation to nearest shiftwidth
 set shiftwidth=4
 set smartindent
 set title

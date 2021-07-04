@@ -57,6 +57,8 @@ HYPHEN_INSENSITIVE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  docker
+  docker-compose
   fzf
   git
   zsh-autosuggestions
@@ -98,4 +100,3 @@ export FZF_DEFAULT_OPS="--extended"
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse'
 
 source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-

@@ -1,0 +1,17 @@
+{
+    "coc.preferences.formatOnSaveFiletypes": [
+        "python",
+        "py",
+        "yaml",
+        "json"
+    ],
+    "coc.preferences.willSaveHandlerTimeout": 5000,
+    "diagnostic.autoRefresh": true,
+    "diagnostic.checkCurrentLine": true,
+    "diagnostic.enableHighlightLineNumber": true,
+    "python.formatting.blackPath": "/Library/Frameworks/Python.framework/Versions/3.9/bin//black",
+    "python.formatting.provider": "black",
+    "python.linting.mypyEnabled": true,
+    "python.pythonPath": "python3",
+    "pyright.organizeimports.provider": "isort"
+}

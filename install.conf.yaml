@@ -1,5 +1,6 @@
 - defaults:
     link:
+      create: true
       relink: false # make sure we want to remove symlink
 
 - clean: ['~']
@@ -7,6 +8,7 @@
 - link:
     ~/.aliases: aliases
     ~/.bashrc: bashrc
+    ~/.config/nvim: nvim
     ~/.gitignore: gitignore
     ~/.oh-my-zsh: oh-my-zsh
     ~/.oh-my-zsh/custom/plugins: oh-my-zsh-custom-plugins
@@ -18,3 +20,4 @@
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - [curl -o ./oh-my-zsh/themes/cobalt2.zsh-theme https://raw.githubusercontent.com/wesbos/Cobalt2-iterm/master/cobalt2.zsh-theme, Installing cobalt2]
+  - [curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim, Installing vim-plug for neovim]

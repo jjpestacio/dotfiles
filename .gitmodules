@@ -2,15 +2,6 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
-[submodule "vim/plugged/vim-monokai-tasty"]
-	path = vim/plugged/vim-monokai-tasty
-	url = https://github.com/patstockwell/vim-monokai-tasty.git
-[submodule "vim/plugged/lightline.vim"]
-	path = vim/plugged/lightline.vim
-	url = https://github.com/itchyny/lightline.vim.git
-[submodule "vim/plugged/jedi-vim"]
-	path = vim/plugged/jedi-vim
-	url = https://github.com/davidhalter/jedi-vim.git
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = https://github.com/ohmyzsh/ohmyzsh.git
@@ -21,6 +12,36 @@
 [submodule "oh-my-zsh-custom-plugins/zsh-syntax-highlighting"]
 	path = oh-my-zsh-custom-plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "vim/plugged/vim-monokai-tasty"]
+	path = vim/plugged/vim-monokai-tasty
+	url = https://github.com/patstockwell/vim-monokai-tasty.git
+[submodule "vim/plugged/lightline.vim"]
+	path = vim/plugged/lightline.vim
+	url = https://github.com/itchyny/lightline.vim.git
+[submodule "vim/plugged/jedi-vim"]
+	path = vim/plugged/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git
 [submodule "vim/plugged/ale"]
 	path = vim/plugged/ale
 	url = https://github.com/dense-analysis/ale.git
+[submodule "vim/plugged/nerdtree"]
+	path = vim/plugged/nerdtree
+	url = https://github.com/preservim/nerdtree.git
+[submodule "nvim/plugged/nerdtree"]
+	path = nvim/plugged/nerdtree
+	url = https://github.com/preservim/nerdtree.git
+[submodule "nvim/plugged/coc.nvim"]
+	path = nvim/plugged/coc.nvim
+	url = https://github.com/neoclide/coc.nvim.git
+[submodule "nvim/plugged/lualine.nvim"]
+	path = nvim/plugged/lualine.nvim
+	url = https://github.com/hoob3rt/lualine.nvim
+[submodule "nvim/plugged/material.nvim"]
+	path = nvim/plugged/material.nvim
+	url = https://github.com/marko-cerovac/material.nvim
+[submodule "nvim/plugged/nvim-treesitter"]
+	path = nvim/plugged/nvim-treesitter
+	url = https://github.com/nvim-treesitter/nvim-treesitter
+[submodule "nvim/plugged/nvim-web-devicons"]
+	path = nvim/plugged/nvim-web-devicons
+	url = https://github.com/kyazdani42/nvim-web-devicons
