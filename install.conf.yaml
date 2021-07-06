@@ -1,23 +1,32 @@
 - defaults:
-    link:
-      create: true
-      relink: false # make sure we want to remove symlink
+      link:
+          create: true
+          relink: false # make sure we want to remove symlink
 
-- clean: ['~']
+- clean: ["~"]
 
 - link:
-    ~/.aliases: aliases
-    ~/.bashrc: bashrc
-    ~/.config/nvim: nvim
-    ~/.gitignore: gitignore
-    ~/.oh-my-zsh: oh-my-zsh
-    ~/.oh-my-zsh/custom/plugins: oh-my-zsh-custom-plugins
-    ~/.paths: paths
-    ~/.vim: vim
-    ~/.vimrc: vimrc
-    ~/.zshrc: zshrc
+      ~/.aliases: aliases
+      ~/.bashrc: bashrc
+      ~/.config/nvim: nvim
+      ~/.gitignore: gitignore
+      ~/.oh-my-zsh: oh-my-zsh
+      ~/.oh-my-zsh/custom/plugins: oh-my-zsh-custom-plugins
+      ~/.paths: paths
+      ~/.vim: vim
+      ~/.vimrc: vimrc
+      ~/.zshrc: zshrc
 
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
-  - [curl -o ./oh-my-zsh/themes/cobalt2.zsh-theme https://raw.githubusercontent.com/wesbos/Cobalt2-iterm/master/cobalt2.zsh-theme, Installing cobalt2]
-  - [curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim, Installing vim-plug for neovim]
+      - [git submodule update --init --recursive, Installing submodules]
+      - [
+            curl -o ./oh-my-zsh/themes/cobalt2.zsh-theme https://raw.githubusercontent.com/wesbos/Cobalt2-iterm/master/cobalt2.zsh-theme,
+            Installing cobalt2,
+        ]
+      - [command -v nvim && brew install nvim, Installing neovim]
+      - [
+            curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim,
+            Installing vim-plug for neovim,
+        ]
+      - [command -v nvim && brew install nvim, Installing neovim]
+      - [nvim --headless +PlugInstall +qall, Install neovim plugins]
