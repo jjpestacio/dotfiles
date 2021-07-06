@@ -1,14 +1,22 @@
 {
     "coc.preferences.formatOnSaveFiletypes": [
+        "css",
         "python",
-        "py",
         "yaml",
-        "json"
+        "javascript",
+        "javascriptreact",
+        "json",
+        "typescript",
+        "typescriptreact"
     ],
     "coc.preferences.willSaveHandlerTimeout": 5000,
     "diagnostic.autoRefresh": true,
     "diagnostic.checkCurrentLine": true,
     "diagnostic.enableHighlightLineNumber": true,
+    "prettier.printWidth": 100,
+    "prettier.tabWidth": 4,
+    "prettier.eslintIntegration": true,
+    "prettier.tslintIntegration": true,
     "python.formatting.blackPath": "/Library/Frameworks/Python.framework/Versions/3.9/bin//black",
     "python.formatting.provider": "black",
     "python.linting.mypyEnabled": true,
