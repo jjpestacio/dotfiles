@@ -1,1 +1,3 @@
 com.googlecode.iterm2.plist
+nvim/plugged/*
+vim/plugged/*
