@@ -1,5 +1,7 @@
 call plug#begin('~/.config/nvim/plugged')
 Plug 'hoob3rt/lualine.nvim'
+" Must run :mkdp#util#install()
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'marko-cerovac/material.nvim'
@@ -55,7 +57,7 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
 " CoC
-let g:coc_global_extensions = ['coc-css', 'coc-eslint', 'coc-fzf-preview', 'coc-go', 'coc-highlight', 'coc-html', 'coc-html-css-support', 'coc-json', 'coc-markdownlint', 'coc-prettier', 'coc-pyright', 'coc-pydocstring', 'coc-sh', 'coc-sql', 'coc-styled-components', 'coc-toml', 'coc-tsserver', 'coc-yaml', 'coc-xml']
+let g:coc_global_extensions = ['coc-css', 'coc-eslint', 'coc-fzf-preview', 'coc-go', 'coc-highlight', 'coc-html', 'coc-html-css-support', 'coc-json', 'coc-prettier', 'coc-pyright', 'coc-pydocstring', 'coc-sh', 'coc-sql', 'coc-styled-components', 'coc-toml', 'coc-tsserver', 'coc-yaml', 'coc-xml']
 " let g:coc_filetype_map = {} " map extensions to filetypes
 
 " Open definition in vertical split
