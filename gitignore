@@ -7,3 +7,4 @@
 .netrwhist
 /node_modules/
 __pycache__
+poetry.toml

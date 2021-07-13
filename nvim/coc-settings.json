@@ -2,7 +2,6 @@
     "coc.preferences.formatOnSaveFiletypes": [
         "css",
         "python",
-        "yaml",
         "javascript",
         "javascriptreact",
         "json",
@@ -12,6 +11,7 @@
     "coc.preferences.willSaveHandlerTimeout": 5000,
     "diagnostic.autoRefresh": true,
     "diagnostic.checkCurrentLine": true,
+    "diagnostic.messageTarget": "echo",
     "diagnostic.enableHighlightLineNumber": true,
     "prettier.printWidth": 100,
     "prettier.tabWidth": 4,
@@ -20,6 +20,8 @@
     "python.formatting.blackPath": "/Library/Frameworks/Python.framework/Versions/3.9/bin//black",
     "python.formatting.provider": "black",
     "python.linting.mypyEnabled": true,
-    "python.pythonPath": "python3",
+    "python.linting.mypyPath": "/Library/Frameworks/Python.framework/Versions/3.9/bin//mypy",
+    "python.pythonPath": "python",
+    "python.sortImports.path": "/Library/Frameworks/Python.framework/Versions/3.9/bin//isort",
     "pyright.organizeimports.provider": "isort"
 }

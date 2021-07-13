@@ -28,6 +28,7 @@ set ruler
 set signcolumn=yes
 set shiftwidth=4
 set smartindent
+set statusline^=%{coc#status()}
 set title
 
 " Remaps
@@ -56,6 +57,12 @@ nnoremap <C-f> :NERDTreeFind<CR>
 " CoC
 let g:coc_global_extensions = ['coc-css', 'coc-eslint', 'coc-fzf-preview', 'coc-go', 'coc-highlight', 'coc-html', 'coc-html-css-support', 'coc-json', 'coc-markdownlint', 'coc-prettier', 'coc-pyright', 'coc-pydocstring', 'coc-sh', 'coc-sql', 'coc-styled-components', 'coc-toml', 'coc-tsserver', 'coc-yaml', 'coc-xml']
 " let g:coc_filetype_map = {} " map extensions to filetypes
+
+" Open definition in vertical split
+" nmap <silent> gd :vsp<CR><Plug>(coc-definition)
+ nmap <silent> gsd :vsp<CR><Plug>(coc-definition)
+
+au FileType python let b:coc_root_patterns = ['.git', '.env', 'venv', '.venv', 'setup.cfg', 'setup.py', 'pyrightconfig.json', 'env']
 
 " Prettier
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
